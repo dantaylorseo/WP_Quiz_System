@@ -32,18 +32,29 @@ class LMS_Quiz_System {
 	}
 
     public function ajax_lms_quiz_submit() {
-        $data = get_post_meta( $_POST['quiz-id'], '_lms_quiz_questions', true );
-        //echo '<pre>'.print_r($data, true).'</pre>';
+        $data     = get_post_meta( $_POST['quiz-id'], '_lms_quiz_questions', true );
+        $settings = get_post_meta( $_POST['quiz-id'], '_lms_quiz_settings', true );
+        
         $score = 0;
-        echo '<div class="lms-quiz-question active">';
-        echo '<h2>Quiz Done</h2>';
+        $total = 0;
+
         foreach( $_POST['lms_quiz_answer']['question'] as $key=>$value ) {
-            echo '<p>You answered: '.$data[$key]['answers'][$value]['answer'].' ('.$value.') :: Scoring: '.$data[$key]['answers'][$value]['score'];
             $score = $score + $data[$key]['answers'][$value]['score'];
+            $max = 0;
+            foreach( $data[$key]['answers'] as $score1 ) {
+                if( $score1['score'] > $max ) {
+                    $max = $score1['score'];
+                }
+            }
+            $total = $total + $max;
         }
-        echo '<hr>';
-        echo '<p>You scored: '.$score.'</p>';
-        //echo '<pre>'.print_r($_POST, true).'</pre>';
+        $results_page_content = stripslashes( $settings['results_page'] );
+
+        $results_page_content = str_replace( '{score}', $score, $results_page_content );
+        $results_page_content = str_replace( '{total}', $total, $results_page_content );
+
+        echo '<div class="lms-quiz-question active">';        
+        echo wpautop($results_page_content);
         echo '</div>';
         wp_die();
     }
@@ -204,7 +215,36 @@ class LMS_Quiz_System {
             'advanced',
             'core'
         );
+
+        add_meta_box(
+            'lms_quiz_settings_meta',
+            __( 'Quiz Settings', $this->textdomain ),
+            array( $this, 'quiz_settings_meta_boxes_callback' ),
+            'lms_quiz',
+            'advanced',
+            'core'
+        );
 	}
+
+    public function quiz_settings_meta_boxes_callback( $post ) {
+        $data = get_post_meta( $post->ID, '_lms_quiz_settings', true ); 
+        if( isset( $data['results_page'] ) && $data['results_page'] ) {
+            $results_page_content = stripslashes( $data['results_page'] );
+        } else {
+            $results_page_content = "You scored {score} out of {total}";
+        }
+    ?>
+        <table class="form-table">
+            <tr>
+                <th>Results Page Template</th>
+                <td class="form-field">
+                    <textarea name="lms_quiz_settings[results_page]" rows="10" width="100%"><?php echo $results_page_content; ?></textarea>
+                    <p class="description">Tags you can use: {score}, {total}, {quiz_link}</p>
+                </td>
+            </tr>
+        </table>
+    <?php 
+    }
 
 	public function quiz_meta_boxes_callback( $post ) {
 		wp_nonce_field( 'quiz_meta_data', 'quiz_meta_nonce' );
@@ -290,6 +330,9 @@ class LMS_Quiz_System {
     	</div>
     <?php $questions++; } } else { ?>
         <div class="lms_quiz_question_box">
+            <button type="button" class="quiz_move_up">&#9650;</button>
+            <button type="button" class="quiz_move_down">&#9660;</button> 
+            <button class="delete_quiz_question">Delete Question</button>
             <div class="lms_quiz_question_box_header">
                 <h2>Question <span>1</span></h2>
             </div>
@@ -328,6 +371,7 @@ class LMS_Quiz_System {
 
 	public function save_quiz_questions_meta( $post_id ) {
 		update_post_meta( $post_id, '_lms_quiz_questions', $_POST['lms_quiz_question'] );
+        update_post_meta( $post_id, '_lms_quiz_settings', $_POST['lms_quiz_settings'] );
 	}
 }
 $lms_quiz_system = new LMS_Quiz_System();

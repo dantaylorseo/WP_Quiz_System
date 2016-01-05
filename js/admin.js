@@ -16,7 +16,9 @@ jQuery(document).ready( function($) {
 	}
 
 	var $questionbox = `<div class="lms_quiz_question_box">
-			<button class="delete_quiz_question">Delete Question</button>
+			<button type="button" class="quiz_move_up">&#9650;</button>
+            <button type="button" class="quiz_move_down">&#9660;</button> 
+            <button class="delete_quiz_question">Delete Question</button>
     		<div class="lms_quiz_question_box_header">
     			<h2>Question <span class="lms_quiz_question_no">1</span></h2>
     		</div>
