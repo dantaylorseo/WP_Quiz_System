@@ -1,0 +1,31 @@
+.lms-quiz-question {
+	display: none;
+}
+.lms-quiz-question.active {
+	display: block;
+}
+.lms_quiz_image {
+	max-width: 100%;
+	height: auto;
+}
+.lms_quiz_list {
+	list-style-type: none;
+	margin: 0;
+}
+.lms_quiz_list li { 
+	
+}
+.lms_quiz_list input[type=radio] {
+	visibility: hidden;
+	position: absolute;
+}
+.lms_quiz_list label {
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+	border: solid 1px #eee;
+	margin-bottom: 10px;
+}
+.lms_quiz_list input:checked + label, .lms_quiz_list label:hover {
+	background-color: #eee;
+}
