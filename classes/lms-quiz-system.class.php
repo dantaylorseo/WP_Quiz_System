@@ -2,9 +2,11 @@
 class LMS_Quiz_System {
 
 	private $admin_icon = '';
-
+    var $textdomain;
+    
 	public function __construct(){
 
+        $this->textdomain = "LMS_Quiz_System_TextDomain";
 		$this->actions();
 		$this->filters();
 
