@@ -259,7 +259,9 @@ class LMS_Quiz_System {
             <input type="text" class="large-text" value="'.$shortcode.'">
         </div>';
         echo '<div>';
-        if( count($data) > 0 ) {
+
+        if( isset( $data[0] ) ) {
+
         foreach( $data as $question ) {
             $answers = 0;
     ?>
@@ -371,7 +373,24 @@ class LMS_Quiz_System {
     <?php
 	}
 
-	public function save_quiz_questions_meta( $post_id ) {
+	public function save_quiz_questions_meta( $post_id, $post, $update ) {
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+            return $post_id;
+
+        if ( 'auto-draft' == $post->post_status ) {
+            return $post_id;
+        }
+
+        if ( 'lms_quiz' == $_POST['post_type'] ) {
+
+            if ( ! current_user_can( 'edit_page', $post_id ) )
+                return $post_id;
+    
+        } else {
+            return $post_id;
+        }
+
 		update_post_meta( $post_id, '_lms_quiz_questions', $_POST['lms_quiz_question'] );
         update_post_meta( $post_id, '_lms_quiz_settings', $_POST['lms_quiz_settings'] );
 	}
