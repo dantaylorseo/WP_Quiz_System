@@ -319,7 +319,7 @@ class LMS_Quiz_System {
                                         <input type="text" value="<?php echo $answer['answer']; ?>" name="lms_quiz_question[<?php echo $questions; ?>][answers][<?php echo $answers; ?>][answer]" class="answer regular-text" placeholder="Answer">
                                     </td>
 		    						<td>
-                                        <input type="text" value="<?php echo $answer['score']; ?>" name="lms_quiz_question[<?php echo $questions; ?>][answers][<?php echo $answers; ?>][score]" class="score regular-text" placeholder="Score">
+                                        <input type="num" value="<?php echo $answer['score']; ?>" name="lms_quiz_question[<?php echo $questions; ?>][answers][<?php echo $answers; ?>][score]" class="score regular-text" placeholder="Score">
                                     </td>
 		    					</tr>
                             <?php 
@@ -356,7 +356,7 @@ class LMS_Quiz_System {
                                         <input type="text" value="" name="lms_quiz_question[<?php echo $questions; ?>][answers][0][answer]" class="answer regular-text" placeholder="Answer">
                                     </td>
                                     <td>
-                                        <input type="text" value="" name="lms_quiz_question[<?php echo $questions; ?>][answers][0][score]" class="score regular-text" placeholder="Score">
+                                        <input type="number" value="" name="lms_quiz_question[<?php echo $questions; ?>][answers][0][score]" class="score regular-text" placeholder="Score">
                                     </td>
                                 </tr>
                             
@@ -390,9 +390,14 @@ class LMS_Quiz_System {
         } else {
             return $post_id;
         }
+        if( isset( $_POST['lms_quiz_question'] ) ) {
+            update_post_meta( $post_id, '_lms_quiz_questions', $_POST['lms_quiz_question'] );   
+        }
 
-		update_post_meta( $post_id, '_lms_quiz_questions', $_POST['lms_quiz_question'] );
-        update_post_meta( $post_id, '_lms_quiz_settings', $_POST['lms_quiz_settings'] );
+        if( isset( $_POST['lms_quiz_settings'] ) ) {
+            update_post_meta( $post_id, '_lms_quiz_settings', $_POST['lms_quiz_settings'] );   
+        }
+        
 	}
 }
 $lms_quiz_system = new LMS_Quiz_System();

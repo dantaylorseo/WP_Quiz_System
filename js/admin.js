@@ -15,50 +15,51 @@ jQuery(document).ready( function($) {
 		});
 	}
 
-	var $questionbox = `<div class="lms_quiz_question_box">
-			<button type="button" class="quiz_move_up">&#9650;</button>
-            <button type="button" class="quiz_move_down">&#9660;</button> 
-            <button class="delete_quiz_question">Delete Question</button>
-    		<div class="lms_quiz_question_box_header">
-    			<h2>Question <span class="lms_quiz_question_no">1</span></h2>
-    		</div>
-    		<div class="lms_quiz_question_box_inner">
-	    		<table class="form-table">
-	    			<tr>
-                        <th>Image</th>
-                        <td>
-                            <div id="box3_preview" class="lms_quiz_image_preview">
-                                                        <img src="https://placehold.it/500x250/ffffff/cccccc/?textsize=120&amp;text=no+image+uploaded" style="width: 100%; height: auto;">
-                        </div>
-                        <input type="hidden" name="lms_quiz_question[0][image]'; ?>" value="" id="box3_image">
-                        <input type="submit" name="upload-box1" id="upload-box1" class="button button-primary upload_media_box" value="Upload" rel="box3">                        </td>
-                    </tr>
-	    			<tr>
-		    			<th>Question</th>
-		    			<td><input type="text" name="lms_quiz_question[0][question]" class="regular-text" value="" placeholder="Question"></td>
-	    			</tr>
-	    			<tr>
-		    			<th>Answers</th>
-		    			<td>
-		    				<table class="lms_quiz_answers_table">
-		    					<tr class="lms_quiz_answer_clone">
-		    						<td>
-                                        <input type="text" value="" name="lms_quiz_question[0][answers][0][answer]" class="answer regular-text" placeholder="Answer">
-                                    </td>
-		    						<td>
-                                        <input type="text" value="" name="lms_quiz_question[0][answers][0][score]" class="score regular-text" placeholder="Score">
-                                    </td>
-		    					</tr>
-		    				</table>
-		    				<button type="button" class="button button-secondary lms_quiz_add_answer">Add Answer</button>
-		    			</td>
-	    			</tr>
-	    		</table>
-	    	</div>
-    	</div>`;
-
+	var questionbox = '<div class="lms_quiz_question_box">' +
+			'<button type="button" class="quiz_move_up">&#9650;</button>' +
+            '<button type="button" class="quiz_move_down">&#9660;</button>' + 
+            '<button class="delete_quiz_question">Delete Question</button>' +
+    		'<div class="lms_quiz_question_box_header">' +
+    			'<h2>Question <span class="lms_quiz_question_no">1</span></h2>' +
+    		'</div>' +
+    		'<div class="lms_quiz_question_box_inner">' +
+	    		'<table class="form-table">' +
+	    			'<tr>' +
+                        '<th>Image</th>' +
+                        '<td>' +
+                            '<div id="box3_preview" class="lms_quiz_image_preview">' +
+                                '<img src="https://placehold.it/500x250/ffffff/cccccc/?textsize=120&amp;text=no+image+uploaded" style="width: 100%; height: auto;">'+
+                        	'</div>' +
+                        	'<input type="hidden" name="lms_quiz_question[0][image]" value="" id="box3_image">' +
+                        	'<input type="submit" name="upload-box1" id="upload-box1" class="button button-primary upload_media_box" value="Upload" rel="box3">'+
+                        '</td>'+
+                    '</tr>' +
+	    			'<tr>' +
+		    			'<th>Question</th>' +
+		    			'<td><input type="text" name="lms_quiz_question[0][question]" class="regular-text" value="" placeholder="Question"></td>' +
+	    			'</tr>' +
+	    			'<tr>' +
+		    			'<th>Answers</th>' +
+		    			'<td>' +
+		    				'<table class="lms_quiz_answers_table">' +
+		    					'<tr class="lms_quiz_answer_clone">' +
+		    						'<td>' +
+                                        '<input type="text" value="" name="lms_quiz_question[0][answers][0][answer]" class="answer regular-text" placeholder="Answer">' +
+                                    '</td>' +
+		    						'<td>' +
+                                        '<input type="number" value="" name="lms_quiz_question[0][answers][0][score]" class="score regular-text" placeholder="Score">' +
+                                    '</td>' +
+		    					'</tr>' +
+		    				'</table>' +
+		    				'<button type="button" class="button button-secondary lms_quiz_add_answer">Add Answer</button>' +
+		    			'</td>' +
+	    			'</tr>' +
+	    		'</table>' +
+	    	'</div>' +
+    	'</div>';
+    	console.log(questionbox);
 	//var $questionbox      = $('.lms_quiz_question_box:last');
-	var $questionboxclone = $($.parseHTML($questionbox));
+	var $questionboxclone = $($.parseHTML(questionbox));
 	var questions = 1;
 
 	var $answer      = $('.lms_quiz_answer_clone:last');
