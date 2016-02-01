@@ -15,6 +15,21 @@ jQuery(document).ready( function($) {
 		});
 	}
 
+	function reorder_answers() {
+		var countquestions = 0;
+		
+		$.each( $('.lms_quiz_answers_table'), function(elem) {
+			var questno = countquestions + 1;
+			$.each( $(this).find('input'), function(elem2) {
+				var name = $(this).attr('name');
+				var newname = name.replace( /lms_quiz_question\[([0-9]+)\]/, 'lms_quiz_question['+countquestions+']');
+				$(this).attr('name', newname);
+			});
+			$(this).find('h2 span.lms_quiz_question_no').html(questno);
+			countquestions = countquestions + 1;
+		});
+	}
+
 	var questionbox = '<div class="lms_quiz_question_box">' +
 			'<button type="button" class="quiz_move_up">&#9650;</button>' +
             '<button type="button" class="quiz_move_down">&#9660;</button>' + 
@@ -57,7 +72,6 @@ jQuery(document).ready( function($) {
 	    		'</table>' +
 	    	'</div>' +
     	'</div>';
-    	console.log(questionbox);
 	//var $questionbox      = $('.lms_quiz_question_box:last');
 	var $questionboxclone = $($.parseHTML(questionbox));
 	var questions = 1;
@@ -191,7 +205,13 @@ jQuery(document).ready( function($) {
 		e.preventDefault();
 		$(this).parent().remove();
 		reorder_questions();
-		
+	});
+
+	$('.delete_quiz_answer').live( 'click', function(e) {
+		e.preventDefault();
+
+		$(this).parent().parent().remove();
+		//reorder_questions();
 	});
 
 	$('.quiz_move_up').live( 'click', function(e) {

@@ -33,6 +33,15 @@
 	color: #a00;
 	padding: 5px 15px;
 }
+.delete_quiz_answer {
+	background-color: transparent;
+	border: none;
+	color: #a00;
+	padding: 5px 15px;
+}
+.delete_quiz_answer:hover {
+	cursor: pointer;
+}
 .quiz_move_up, .quiz_move_down {
 	float: right;
 	background-color: #fff;
