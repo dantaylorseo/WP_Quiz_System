@@ -6,7 +6,6 @@ class LMS_Quiz_System {
     
 	public function __construct(){
 
-        $this->textdomain = "LMS_Quiz_System_TextDomain";
 		$this->actions();
 		$this->filters();
 
@@ -30,7 +29,7 @@ class LMS_Quiz_System {
 		
 	}
 
-    public function ajax_lms_quiz_submit() {
+    static public function ajax_lms_quiz_submit() {
         $data     = get_post_meta( $_POST['quiz-id'], '_lms_quiz_questions', true );
         $settings = get_post_meta( $_POST['quiz-id'], '_lms_quiz_settings', true );
         
@@ -58,33 +57,33 @@ class LMS_Quiz_System {
         wp_die();
     }
 
-	private function filters() {
+	static private function filters() {
 
 	}
 
-	public function admin_enqueue_scripts() {
+	static public function admin_enqueue_scripts() {
 		wp_enqueue_script( 'lms-quiz-admin', LMS_QUIZ_SYSTEM_URL .'/js/admin.js', array('jquery', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-datepicker', 'jquery-ui-draggable', 'jquery-ui-droppable', 'dashboard' ) );
 		wp_enqueue_style( 'lms-quiz-admin-style', LMS_QUIZ_SYSTEM_URL .'/css/admin.css' );
 	}
 
-	public function enqueue_scripts() {
+	static public function enqueue_scripts() {
         wp_enqueue_script( 'lms-quiz-front-end', LMS_QUIZ_SYSTEM_URL .'/js/front-end.js', array('jquery') );
         wp_localize_script( 'lms-quiz-front-end', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
         wp_enqueue_style( 'lms-quiz-front-end-style', LMS_QUIZ_SYSTEM_URL .'/css/front-end.css' );
 	}
 
-	public function admin_menus() {
+	static public function admin_menus() {
         add_submenu_page('edit.php?post_type=lms_quiz', 'Submissions', 'Submissions', 'manage_options', 'edit.php?post_type=lms_quiz_submission' );
 	}
 
 	
 
     
-	public function quiz_meta_boxes() {
+	static public function quiz_meta_boxes() {
 		add_meta_box(
             'lms_quiz_question_meta',
-            __( 'Quiz Questions', $this->textdomain ),
+            __( 'Quiz Questions' ),
             array( $this, 'quiz_meta_boxes_callback' ),
             'lms_quiz',
             'advanced',
@@ -93,7 +92,7 @@ class LMS_Quiz_System {
 
         add_meta_box(
             'lms_quiz_settings_meta',
-            __( 'Quiz Settings', $this->textdomain ),
+            __( 'Quiz Settings' ),
             array( $this, 'quiz_settings_meta_boxes_callback' ),
             'lms_quiz',
             'advanced',
@@ -101,7 +100,7 @@ class LMS_Quiz_System {
         );
 	}
 
-    public function quiz_settings_meta_boxes_callback( $post ) {
+    static public function quiz_settings_meta_boxes_callback( $post ) {
         $data = get_post_meta( $post->ID, '_lms_quiz_settings', true ); 
         if( isset( $data['results_page'] ) && $data['results_page'] ) {
             $results_page_content = stripslashes( $data['results_page'] );
@@ -121,7 +120,7 @@ class LMS_Quiz_System {
     <?php 
     }
 
-	public function quiz_meta_boxes_callback( $post ) {
+	static public function quiz_meta_boxes_callback( $post ) {
 		wp_nonce_field( 'quiz_meta_data', 'quiz_meta_nonce' );
         $data = get_post_meta( $post->ID, '_lms_quiz_questions', true );
         wp_enqueue_media();
@@ -249,7 +248,7 @@ class LMS_Quiz_System {
     <?php
 	}
 
-	public function save_quiz_questions_meta( $post_id, $post, $update ) {
+	static public function save_quiz_questions_meta( $post_id, $post, $update ) {
 
         if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
             return $post_id;
