@@ -2,6 +2,7 @@
 
 add_shortcode( 'quiz', 'display_quiz_shortcode' ); 
 
+
 function display_quiz_shortcode( $atts ) {
     $a = shortcode_atts( array(
         'id'    => '',

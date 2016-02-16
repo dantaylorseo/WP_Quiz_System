@@ -212,12 +212,18 @@ jQuery(document).ready( function($) {
 
 	$('.delete_quiz_answer').live( 'click', function(e) {
 		e.preventDefault();
+
 		var answers = $(this).parent().parent().parent().find('.answer');
 		if( answers.length == 1 ) {
 			$(this).parent().parent().find('input').val('');
 		} else {
 			$(this).parent().parent().remove();
 		}
+
+
+		$(this).parent().parent().remove();
+		//reorder_questions();
+
 	});
 
 	$('.quiz_move_up').live( 'click', function(e) {

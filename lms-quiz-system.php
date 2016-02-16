@@ -17,6 +17,7 @@ define("LMS_QUIZ_SYSTEM_URL", plugins_url( '', __FILE__ ) );
 require_once( LMS_QUIZ_SYSTEM_DIR . "/includes/post_types.php" );
 require_once( LMS_QUIZ_SYSTEM_DIR . "/includes/shortcodes.php" );
 
+
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 
 function enqueue_scripts() {
