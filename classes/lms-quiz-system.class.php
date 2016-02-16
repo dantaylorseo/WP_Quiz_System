@@ -45,35 +45,6 @@ class LMS_Quiz_System {
         
     }
 
-	private $admin_icon = '';
-    var $textdomain;
-    
-	public function __construct(){
-
-		$this->actions();
-		$this->filters();
-
-	}
-
-	private function actions() {
-
-		// Scripts
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-
-		// Meta boxes
-		add_action( 'add_meta_boxes', array( $this, 'quiz_meta_boxes' ) );
-		add_action( 'save_post', array( $this, 'save_quiz_questions_meta' ), 10, 3 ) ;
-		// Admin menus
-		add_action('admin_menu', array($this, 'admin_menus'));
-
-        // Ajax
-        add_action('wp_ajax_ajax_lms_quiz_submit', array($this, 'ajax_lms_quiz_submit'));
-        add_action('wp_ajax_nopriv_ajax_lms_quiz_submit', array($this, 'ajax_lms_quiz_submit'));
-		
-	}
-
-
     static public function ajax_lms_quiz_submit() {
         $data     = get_post_meta( $_POST['quiz-id'], '_lms_quiz_questions', true );
         $settings = get_post_meta( $_POST['quiz-id'], '_lms_quiz_settings', true );
