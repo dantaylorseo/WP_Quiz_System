@@ -1,0 +1,829 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ins",
+				"$instance〔static property〕"
+			],
+			[
+				"ans",
+				"answers"
+			],
+			[
+				"current",
+				"$current_screen〔variable〕"
+			],
+			[
+				"res",
+				"reponse"
+			],
+			[
+				"tets",
+				"testimonials"
+			],
+			[
+				"ref",
+				"$referrer〔variable〕"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"teama",
+				"$teamarray〔variable〕"
+			],
+			[
+				"te",
+				"$teamsresult〔variable〕"
+			],
+			[
+				"tea",
+				"$teamarray〔variable〕"
+			],
+			[
+				"feeda",
+				"$feedarray〔variable〕"
+			],
+			[
+				"file",
+				"$filename〔variable〕"
+			],
+			[
+				"fee",
+				"feed_title"
+			],
+			[
+				"new",
+				"$newrows〔variable〕"
+			],
+			[
+				"ques",
+				"questionbox"
+			],
+			[
+				"po",
+				"post_id"
+			],
+			[
+				"html",
+				"htmlentities〔function〕"
+			],
+			[
+				"striup",
+				"strip_tags〔function〕"
+			],
+			[
+				"mat",
+				"matches"
+			],
+			[
+				"en",
+				"$enclosure〔variable〕"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"post",
+				"$post_id〔variable〕"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"img",
+				"$imgsrc〔variable〕"
+			],
+			[
+				"per",
+				"$percentcomplete〔variable〕"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"ajax",
+				"ajax_lms_quiz_submit"
+			],
+			[
+				"que",
+				"$questionno〔variable〕"
+			],
+			[
+				"questio",
+				"$questionno〔variable〕"
+			],
+			[
+				"quest",
+				"$questionno〔variable〕"
+			],
+			[
+				"answer",
+				"answerclone"
+			],
+			[
+				"get_curr",
+				"get_current_user_id"
+			],
+			[
+				"user",
+				"userlocations"
+			],
+			[
+				"get_user",
+				"get_user_locations"
+			],
+			[
+				"get_cu",
+				"get_current_user_id"
+			],
+			[
+				"loca",
+				"locations"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"applic",
+				"applications"
+			],
+			[
+				"postc",
+				"postcodelist"
+			],
+			[
+				"bu",
+				"button"
+			],
+			[
+				"fony",
+				"font-family"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"it",
+				"items"
+			],
+			[
+				"the",
+				"thead	Tag"
+			],
+			[
+				"pr",
+				"preventDefault"
+			],
+			[
+				"get_post",
+				"get_post_meta"
+			],
+			[
+				"cus",
+				"customer"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"order",
+				"$orders〔variable〕"
+			],
+			[
+				"_",
+				"_application_data"
+			],
+			[
+				"cust",
+				"$customerdata〔variable〕"
+			],
+			[
+				"get_pos",
+				"get_post_meta"
+			],
+			[
+				"ob",
+				"ob_start"
+			],
+			[
+				"admin",
+				"administrator"
+			],
+			[
+				"home",
+				"home_url"
+			],
+			[
+				"login",
+				"login_page"
+			],
+			[
+				"pos",
+				"postcodelist"
+			],
+			[
+				"adm",
+				"adminname"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"comp",
+				"company"
+			],
+			[
+				"Pos",
+				"Position"
+			],
+			[
+				"appli",
+				"application_form"
+			],
+			[
+				"reg",
+				"register_shortcodes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "# From:      [lms-quiz-system, js, includes, css, classes]\n# No.Files:  4\n# Time:      0.01s\n\n\n\n\n# Usage:\n#	 s                    = next todo\n#	 w                    = previous todo\n#	 r                    = refresh result\n#	 f or enter           = goto todo location\n#	 d                    = open context panel\n#	 a                    = close context panel\n#	 move caret, then tab = select todo\n",
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Windows",
+				"name": "ReviewMyself",
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 279.0,
+		"last_filter": "Review",
+		"selected_items":
+		[
+			[
+				"Review",
+				"ReviewMyself: Folders in Project"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: searcg",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/classes",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/css",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/includes",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/js",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/js",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/includes"
+	],
+	"file_history":
+	[
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/lms-quiz.sublime-project",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/classes/lms-quiz-system.class.php",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/js/front-end.js",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/includes/shortcodes.php",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/js/admin.js",
+		"/S/tailoreddev.co.uk/wp-content/plugins/lms-quiz-system/lms-quiz-system.php",
+		"/S/GIT/SoSensational/plugins/affiliate-shop/affilliate-shop.php",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/classes/lms-quiz-system.class.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/lms-quiz-system.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/front-page.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/js/front-end.js",
+		"/S/Clients Temp/uprint/wp-content/plugins/uprint_management_plugin/classes/uprint-management-plugin.class.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/functions.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/page.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/header.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/footer.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/css/main.css",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/template-full-width.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/content-page.php",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/css/admin.css",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/js/admin.js",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/functions/post_types.php",
+		"/S/Clients Temp/uprint/wp-content/plugins/lms-quiz-system/functions/shortcodes.php",
+		"/D/SSH Keys/putty.pub",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/faq-page.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/faq-page.php",
+		"/S/Clients Temp/uprint/wp-content/themes/uprint_theme/front-page.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/search.php",
+		"/S/Clients Temp/EFC News RSS/error_log",
+		"/S/Clients Temp/uprint/uPrint.sublime-project",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/autoloader.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/FeedDAO.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/index.html",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/config.ini",
+		"/S/Clients Temp/hoylake/wp-content/plugins/lms-quiz-system/classes/lms-quiz-system.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/S/Clients Temp/hoylake/wp-content/plugins/lms-quiz-system/css/admin.css",
+		"/S/Clients Temp/Calday Pools/calday_theme/functions.php",
+		"/S/Clients Temp/hoylake/wp-content/plugins/lms-quiz-system/js/front-end.js",
+		"/S/Clients Temp/hoylake/wp-content/plugins/lms-quiz-system/css/front-end.css",
+		"/S/Clients Temp/hoylake/wp-content/plugins/lms-quiz-system/js/admin.js",
+		"/S/Clients Temp/Calday Pools/calday_theme/js/admin.js",
+		"/S/Clients Temp/uprint/wp-content/plugins/uprint_management_plugin/js/front-end.js",
+		"/S/Clients Temp/uprint/uprint_theme/css/main.css",
+		"/S/Clients Temp/uprint/uprint_theme/functions.php",
+		"/S/Clients Temp/uprint/uprint_theme/content.php",
+		"/S/Clients Temp/uprint/uprint_theme/content-page.php",
+		"/S/Clients Temp/uprint/uprint_theme/header.php",
+		"/S/Clients Temp/uprint/uprint_theme/style.css",
+		"/S/Clients Temp/uprint/uprint_theme/footer.php",
+		"/S/Clients Temp/uprint/uprint_theme/sidebar.php",
+		"/S/Clients Temp/uprint/uprint_theme/template-full-width.php",
+		"/S/Clients Temp/uprint/uprint_management_plugin/css/admin-style.css",
+		"/S/Clients Temp/uprint/uprint_management_plugin/uprint-management-plugin.php",
+		"/S/Clients Temp/uprint/uprint_management_plugin/classes/uprint-management-plugin.class.php",
+		"/S/Clients Temp/uprint/uprint_management_plugin/js/admin-js.js",
+		"/S/Clients Temp/uprint/uprint_management_plugin/js/front-end.js",
+		"/S/Clients Temp/uprint/uprint_management_plugin/to_do.txt",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/Team.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/FootballData.php",
+		"/S/GIT/SoSensational/plugins/affiliate-shop/js/front-end.js",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/sidebar.php",
+		"/S/Clients Temp/uprint/uprint_theme/sidebar",
+		"/S/Clients Temp/Kate Hayes/kates_theme/header.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/style.css",
+		"/S/Clients Temp/Kate Hayes/kates_theme/functions.php",
+		"/S/Clients Temp/uprint/uprint_theme/temp.html",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/content-sidebar.css",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/page-full-width.php",
+		"/S/GIT/SoSensational/plugins/competition-manager/competition-manager.php",
+		"/C/Users/Dan/Desktop/seowned_new/archive-testimonials.php",
+		"/C/Users/Dan/Desktop/seowned_new/index.php",
+		"/C/Users/Dan/Desktop/seowned_new/header.php",
+		"/C/Users/Dan/Desktop/seowned_new/sidebar.php",
+		"/C/Users/Dan/Desktop/seowned_new/page.php",
+		"/C/Users/Dan/Desktop/seowned_new/content.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/wp_bootstrap_navwalker.php",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/tailored-theme-plugin.class.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Dan/AppData/Local/Temp/fz3temp-1/tailored-theme-plugin.php",
+		"/S/rainmaker/wordpress/wp-content/mu-plugins/synthesis/library/constant-contact-gateway/classes/class.Rainmaker_Opt_In_Gateway_Constant_Contact.php",
+		"/S/rainmaker/wordpress/wp-content/mu-plugins/synthesis/library/constant-contact-gateway/Constant_Contact_Optin_Gateway.php",
+		"/S/Clients Temp/LIsa Gill Wedding/lgw_theme/functions.php",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/Seti_UI/Seti_orig.sublime-theme",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Dan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/S/Nic Site/wp-content/themes/plm_theme/functions.php"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"headers",
+			"_get_api_url",
+			"madmimi_rm_labs_option_page",
+			"madmimi_rm_labs_after_options",
+			"rm_beta_madmimi",
+			"FeedBlitz",
+			"feedblitz",
+			"Feedblitz",
+			"feedblitz",
+			"FeedBlitz",
+			"feedblitz",
+			"Feedblitz",
+			"feedblitz",
+			"FeedBlitz",
+			"FEEDBLITZ",
+			"FeedBlitz",
+			"feedblitz",
+			"$this->",
+			"FAQ",
+			"get_current_screen()",
+			", $this->textdomain",
+			"Score",
+			"login",
+			", $this->textdomain",
+			"applications",
+			"Application",
+			"Applications",
+			"col-sm-3",
+			");\n",
+			"questionbox",
+			"h2",
+			"lms_quiz_list",
+			"jQuery",
+			"id",
+			"newanswer",
+			"applications",
+			">');\n",
+			"user_meta",
+			"locations",
+			"_location",
+			"_default_loc",
+			"data['default']",
+			"_postcodes",
+			"_location_da",
+			"telephone",
+			"_location_dat",
+			"applications",
+			"customers",
+			"printers",
+			"a3usage",
+			"a4usage",
+			"company",
+			"printers",
+			"a3usage",
+			"a4usage",
+			"company",
+			"_location_data",
+			"_postcodes",
+			"get_post_meta( $data['customer']",
+			"'",
+			"option",
+			"data",
+			"tel",
+			"company",
+			"location",
+			"Location",
+			"location",
+			"0",
+			"body",
+			"tooltip",
+			"ref",
+			"th",
+			"current_user_id",
+			"customer",
+			"name",
+			"application",
+			"frontend_application",
+			"Cartridge Ref. Number",
+			" Ref. Number",
+			"name",
+			"a3usage",
+			"4",
+			"company",
+			"name",
+			". ",
+			"Username/email",
+			"login_form",
+			"order_form",
+			"application_form",
+			"a3usage",
+			"a4usage",
+			"email",
+			"tel",
+			"address",
+			"type",
+			"company",
+			"position",
+			"name",
+			"model",
+			"mode",
+			"a3usage",
+			"a4usage",
+			"email",
+			"address",
+			"type",
+			"company",
+			"application",
+			"Application",
+			"application",
+			"Application",
+			"application",
+			"applications",
+			"applications_columns",
+			"Customer",
+			"customer",
+			"CUSTOMER",
+			"Customer",
+			"DONE",
+			"entries_columns",
+			"<button type=\"button\" class=\"btn\">Accept</button>",
+			"col-md-18",
+			"col-sm-6",
+			"<?php echo (",
+			"'your-plugin-textdomain'",
+			"your-plugin-textdomain",
+			"sidebar",
+			"background",
+			"sideb"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"col-sm-9",
+			"col-sm-3",
+			"'. (",
+			"'.",
+			"$this->textdomain"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"color_scheme": "Packages/Review Myself/ReviewMyself-NeonDark.hidden-tmTheme",
+							"line_numbers": false,
+							"paths_to_search":
+							[
+								"S:\\tailoreddev.co.uk\\wp-content\\plugins\\lms-quiz-system",
+								"S:\\tailoreddev.co.uk\\wp-content\\plugins\\lms-quiz-system\\js",
+								"S:\\tailoreddev.co.uk\\wp-content\\plugins\\lms-quiz-system\\includes",
+								"S:\\tailoreddev.co.uk\\wp-content\\plugins\\lms-quiz-system\\css",
+								"S:\\tailoreddev.co.uk\\wp-content\\plugins\\lms-quiz-system\\classes"
+							],
+							"region_to_result_dict":
+							{
+							},
+							"review_myself_view": true,
+							"selected_index": -1,
+							"syntax": "Packages/Review Myself/ReviewMyself.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lms-quiz.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
